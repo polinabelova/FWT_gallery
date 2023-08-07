@@ -11,17 +11,29 @@ header {
 .header-logo{
     margin-top: 25px;
     margin-bottom: 25px;
+
 }
 
 .btn-change-theme{
     background-color: transparent;
     border: 0;
+ 
 }
 
 #dark .header-change-theme {
     filter: invert(100%);
-  }
-  
+}
+ 
+@media (min-width: 320px) {
+    header {
+        width: 320px;
+    }
+    .header-logo{
+        margin-top: 25px;
+        margin-bottom: 25px;
+    }
+   
+}  
 
 @media (min-width: 768px) {
     header {

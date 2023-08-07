@@ -21,7 +21,6 @@ export default function ImageCard(image) {
                     <b>Created: </b>{data.created}
                     <br></br>
                     <b>Location: </b>{locations.location}</p>
-                {/* <a href="#">View more</a> */}
             </figcaption>
         </figure>
     )

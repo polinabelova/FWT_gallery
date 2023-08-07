@@ -12,7 +12,7 @@ export default function Header({ theme }) {
         <header id={currTheme}>
             <div>
                 <img className='header-logo'
-                    src='FWT_logo.svg' alt=''
+                    src='FWT_logo.svg' 
                 /></div>
             <div>
                 <button className='btn-change-theme' onClick={toggleTheme}><img className='header-change-theme'

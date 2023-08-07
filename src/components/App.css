@@ -8,7 +8,6 @@
     animation: App-logo-spin infinite 20s linear;
   }
 }
-
 .App-header {
   background-color: #282c34;
   min-height: 100vh;
@@ -28,18 +27,16 @@
   from {
     transform: rotate(0deg);
   }
-
   to {
     transform: rotate(360deg);
   }
 }
-
 #light {
   background-color: white;
 }
 
 #dark {
-  background-color: #000000;
+  background-color: black;
 }
 
 html {
@@ -51,37 +48,8 @@ html {
   background-color: black;
 }
 
-#light .pagBtn {
-  background-color: white;
-  border-color: black;
-  color: black;
-}
-
-#dark .pagBtn {
-  background-color: black;
-  border-color: white;
-  color: white
-}
-
-#light .pagBtn:hover {
-  background-color: rgb(194, 193, 193);
-}
-
-#dark .pagBtn:hover {
-  background-color: rgb(194, 193, 193);
-}
-
-#light .search{
-background-color: white;
-color: #000000;
-}
-
-#dark .search{
-background-color: #000000;
-color: white;
-border-color: white;
-}
-
-#dark .header-change-theme {
+/* #dark .header-change-theme {
   filter: invert(100%);
-}
+} */
+
+/*# sourceMappingURL=App.css.map */

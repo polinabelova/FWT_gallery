@@ -1,0 +1,28 @@
+$font: 'Roboto', sans-serif;
+$font-color: black;
+$bg-light: white;
+$border-color: rgb(86, 86, 86);
+$border-radius: 8px;
+.search {
+    width: 100%;
+    font-family: $font;
+    font-size: 16px;
+    padding: 10px;
+    height: 45px;
+    border: 1px solid;
+    border-color: $border-color;
+    border-radius: $border-radius;
+}
+
+
+#light .search {
+    background-color: white;
+    color: black;
+  }
+  
+#dark .search {
+    background-color: black;
+    color: white;
+    border-color: white;
+  }
+  

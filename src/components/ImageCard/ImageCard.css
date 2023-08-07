@@ -1,0 +1,127 @@
+.image {
+  border-radius: 20px;
+  width: 100%;
+  height: 100%;
+  min-height: 265px;
+  object-fit: cover;
+  justify-content: center;
+}
+
+figure {
+  margin: 0;
+}
+
+figure {
+  position: relative;
+  float: left;
+  overflow: hidden;
+  max-height: 360px;
+  width: 100%;
+  height: 100%;
+  text-align: left;
+  border-radius: 20px;
+  cursor: pointer;
+}
+
+figure figcaption {
+  color: black;
+  font-family: "Roboto Black", sans-serif;
+  -webkit-backface-visibility: hidden;
+  backface-visibility: hidden;
+}
+
+figure figcaption::before,
+figure figcaption::after {
+  pointer-events: none;
+}
+
+figure figcaption,
+figure figcaption > a {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+
+/* Anchor will cover the whole item by default */
+figure figcaption > a {
+  z-index: 1000;
+  text-indent: 200%;
+  white-space: nowrap;
+  font-size: 0;
+  opacity: 0;
+}
+
+figure h4 {
+  font-weight: 30;
+  font-size: 16px;
+}
+
+figure h4,
+figure p {
+  margin: 0;
+}
+
+figure p {
+  letter-spacing: 1px;
+  font-size: 12px;
+  font-family: "Roboto", sans-serif;
+  margin-top: 20%;
+}
+
+/*-----------------*/
+figure.img-container figcaption::before {
+  position: absolute;
+  top: 87%;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgb(255, 255, 255);
+  content: "";
+  opacity: 0.75;
+}
+
+figure.img-container h4 {
+  position: absolute;
+  top: 93%;
+  left: 5%;
+  width: 95%;
+  color: black;
+  -webkit-transition: -webkit-transform 0.35s, color 0.35s;
+  transition: transform 0.35s, color 0.35s;
+  -webkit-transform: translate3d(0, -50%, 0);
+  transform: translate3d(0, -50%, 0);
+}
+
+figure.img-container figcaption::before,
+figure.img-container p {
+  -webkit-transition: opacity 0.35s, -webkit-transform 0.35s;
+  transition: opacity 0.35s, transform 0.35s;
+}
+
+figure.img-container p {
+  position: absolute;
+  bottom: 0;
+  left: 4px;
+  padding: 1em;
+  width: 100%;
+  opacity: 0;
+  -webkit-transform: translate3d(0, 10px, 0);
+  transform: translate3d(0, 10px, 0);
+}
+
+figure.img-container:hover h4 {
+  color: black;
+  -webkit-transform: translate3d(0, -50%, 0) translate3d(0, -90%, 0);
+  transform: translate3d(0, -50%, 0) translate3d(0, -90px, 0);
+}
+
+figure.img-container:hover figcaption::before,
+figure.img-container:hover p {
+  opacity: 0.8;
+  -webkit-transform: translate3d(0, 40%, 0);
+  transform: translate3d(0, -45%, 0);
+}
+
+/*# sourceMappingURL=ImageCard.css.map */

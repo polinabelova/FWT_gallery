@@ -48,8 +48,19 @@ html {
   background-color: black;
 }
 
-/* #dark .header-change-theme {
+#light .search {
+  background-color: white;
+  color: black;
+}
+
+#dark .search {
+  background-color: black;
+  color: white;
+  border-color: white;
+}
+
+#dark .header-change-theme {
   filter: invert(100%);
-} */
+}
 
 /*# sourceMappingURL=App.css.map */
